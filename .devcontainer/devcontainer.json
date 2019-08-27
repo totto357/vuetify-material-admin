@@ -1,0 +1,21 @@
+{
+	"name": "vuetify-material-admin",
+	"dockerFile": "Dockerfile",
+	"appPort": 3000,
+	"workspaceMount": "src=/Users/hosozawn/Private/vuetify-material-admin,dst=/workspace,type=bind,consistency=cached",
+	"workspaceFolder": "/workspace",
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"octref.vetur"
+	],
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	// "postCreateCommand": "npm install",
+	// Comment out the next line to run as root instead. Linux users, update
+	// Dockerfile with your user's UID/GID if not 1000.
+	"runArgs": [
+		"-u",
+		"node"
+	]
+}
