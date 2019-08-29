@@ -15,7 +15,8 @@
     )
 
   v-btn.ml-2(icon @click="toggle")
-    v-icon mdi-magnify
+    v-icon(v-if="!isActive") mdi-magnify
+    v-icon(v-else) mdi-close
 </template>
 
 <script lang="ts">

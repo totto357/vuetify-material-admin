@@ -1,6 +1,6 @@
 <template lang="pug">
 v-app#app
-  vm-drawer
+  menu-drawer
   vm-header
 
   v-content
@@ -12,12 +12,12 @@ v-app#app
 import Vue from "vue"
 import { Component } from "vue-property-decorator"
 
-import VmDrawer from "~/components/drawer/Drawer.vue"
+import MenuDrawer from "~/components/drawer/MenuDrawer.vue"
 import VmHeader from "@/components/header/Header.vue"
 
 @Component({
   components: {
-    VmDrawer,
+    MenuDrawer,
     VmHeader,
   }
 })
